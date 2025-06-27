@@ -1,0 +1,46 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "extends": ["ultracite"],
+  "formatter": {
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "rules": {
+      "correctness": {
+        "noUndeclaredVariables": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noConsole": "off",
+        "noEmptyBlockStatements": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "style": {
+        "useBlockStatements": "off",
+        "noNestedTernary": "off",
+        "useFilenamingConvention": "off",
+        "noNonNullAssertion": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useAltText": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off",
+        "noImgElement": "off"
+      },
+      "nursery": {
+        "noShadow": "off",
+        "noUnknownAtRule": "off",
+        "noAwaitInLoop": "off"
+      }
+    }
+  }
+}
