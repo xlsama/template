@@ -9,7 +9,10 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/image', '@primevue/nuxt-module'],
   css: ['~/assets/css/main.css'],
   vite: {
-    plugins: [tailwindcss() as any],
+    server: {
+      open: true,
+    },
+    plugins: [tailwindcss()],
   },
   primevue: {
     options: {
